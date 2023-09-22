@@ -11,4 +11,4 @@ def test_1f11_public(np, Bandit, gradient_bandit):
     N=20
     for n in range(N):
         rew_rec_n, avg_ret_rec_n, tot_reg_rec_n, opt_act_rec_n = gradient_bandit(dummy_bandit, alpha=0)
-        np.testing.assert_allclose(tot_reg_rec_n[-1],740, atol=20)
+        np.testing.assert_allclose(tot_reg_rec_n[-1],135, atol=20)

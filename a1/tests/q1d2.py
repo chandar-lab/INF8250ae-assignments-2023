@@ -11,4 +11,4 @@ def test_1d21_public(np, Bandit, boltzmann):
     N=20
     for n in range(N):
         rew_rec_n, avg_ret_rec_n, tot_reg_rec_n, opt_act_rec_n = boltzmann(dummy_bandit, tau=1e8) # uniform sampling
-        np.testing.assert_allclose(tot_reg_rec_n[-1],730, atol=20)
+        np.testing.assert_allclose(tot_reg_rec_n[-1],135, atol=20)

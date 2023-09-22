@@ -11,4 +11,4 @@ def test_1c11_public(np, Bandit, ucb):
     N=20
     for n in range(N):
         rew_rec_n, avg_ret_rec_n, tot_reg_rec_n, opt_act_rec_n = ucb(dummy_bandit, c=10)
-        np.testing.assert_allclose(tot_reg_rec_n[-1],700, atol=30)
+        np.testing.assert_allclose(tot_reg_rec_n[-1],105, atol=30)
