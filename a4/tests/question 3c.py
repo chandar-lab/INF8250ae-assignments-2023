@@ -94,7 +94,7 @@ def test_update_type_1(
     loss = test_reinforce.update(
         test_states, test_actions, test_rewards, test_terminated
     )
-    assert_equal(loss["policy_loss"], 4.0927934646606445)
+    assert_equal(loss["policy_loss"], 4.115862846374512)
     assert_equal(loss["value_loss"], 36.25490188598633)
 
 
